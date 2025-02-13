@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+        }
+        .navbar {
+            background-color: #1a1a1a;
+        }
+        .hero {
+            background: url('https://www.shutterstock.com/image-vector/game-room-interior-night-stream-260nw-1687261348.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .game-card {
+            background-color: #222;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">🎮 Gaming Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hh">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#games">Games</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#photo">Photo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ll">Leaderboard</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="hh">
+        <div>🔥 Featured Game: Cyber Arena</div>
+    </div>
+
+    <!-- Game Library --> 
+    <div class="container my-5" id="games"> 
+        <h2 class="text-center mb-4">🎮 Popular Games</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="game-card p-3">
+                    <img src="https://play-lh.googleusercontent.com/-PL5wj8ZlNU7Js7t5NEzNFSsJwzHKkvuT90PZ2Wgmz65BUgy6ffDmSF35-5zNuPahqU=w526-h296-rw" class="img-fluid" alt="Game">
+                    <h5 class="mt-2">Game Title 1</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="game-card p-3">
+                    <img src="https://media.formula1.com/image/upload/f_auto,c_limit,q_auto,w_1320/content/dam/fom-website/manual/Misc/F1%20Game/EA_F124_KEY_STANDARD_16by9Centre" class="img-fluid" alt="Game">
+                    <h5 class="mt-2">Game Title 2</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="game-card p-3">
+                    <img src="https://cdn.mos.cms.futurecdn.net/gCQuNMuAs4yHm4YaMTXsBC-1200-80.jpg" class="img-fluid" alt="Game">
+                    <h5 class="mt-2">Game Title 3</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" id="photo" >
+        <h2 class="text-center mb-4">Our Photo <span class="text-">GALLERY</span></h2>
+        <p class="text-center"></p>
+        
+        <div class="row">
+            <div class="col-6 col-md-4 mb-4">
+                <img src="https://pbskids.org/_next/image?url=https%3A%2F%2Fcms-tc.pbskids.org%2Fglobal%2Fmezzanines%2Fgames%2FODDS-DiceyEscape-FeatureGraphic-Generic.png&w=7680&q=75" class="img-fluid rounded" alt="Image 1">
+            </div>
+            <div class="col-6 col-md-4 mb-4">
+                <img src="https://play-lh.googleusercontent.com/Wx2QCHFKpBSns2tCNnH9DY2Vsl_mHmsxKn4tQ_WqxM8MhTfC-_OA1QPAWHh2UzxhkA=w526-h296-rw" class="img-fluid rounded" alt="Image 2">
+            </div>
+            <div class="col-6 col-md-4 mb-4">
+                <img src="https://pbskids.org/_next/image?url=https%3A%2F%2Fcms-tc.pbskids.org%2Fglobal%2Fmezzanines%2Fgames%2FODDS-DiceyEscape-FeatureGraphic-Generic.png&w=7680&q=75" class="img-fluid rounded" alt="Image 3">
+            </div>
+            
+           
+        </div>
+      </div>
+    <!-- Leaderboard -->
+    <div class="container my-5" id="ll">
+        <h2 class="text-center mb-4">🏆 Leaderboard</h2>
+        <table class="table table-dark table-striped text-center">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Player</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>GamerX</td><td>9800</td></tr>
+                <tr><td>2</td><td>ShadowKnight</td><td>9200</td></tr>
+                <tr><td>3</td><td>DragonSlayer</td><td>8700</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="container my-5" id="contact">
+        <h2 class="text-center mb-4">📩 Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark">
+        <p>© 2025 Gaming Hub | Follow us on 
+            <a href="#" class="text-light">Instagram</a>, 
+            <a href="#" class="text-light">Twitter</a>, 
+            <a href="#" class="text-light">Discord</a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
